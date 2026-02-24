@@ -24,6 +24,8 @@
         // Galaxy Tab Cloaking Logic
         window.onblur = function () {
             document.title = "Google Docs";
+            const favicon = document.getElementById("favicon");
+            if (favicon) favicon.href = "https://ssl.gstatic.com/docs/documents/images/kix-favicon7.ico";
         };
 
         window.onfocus = function () {
